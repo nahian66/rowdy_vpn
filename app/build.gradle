@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 33
+    buildToolsVersion '30.0.3'
+    defaultConfig {
+        applicationId 'com.chriswall.vpnfree'
+        minSdkVersion 17
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding{
+        enabled true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'com.android.support:multidex:1.0.3'
+
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.20'
+
+    implementation 'com.squareup.okhttp3:okhttp:4.9.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.7.0'
+
+    // Glide image loader
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    implementation project(path: ':vpnLib')
+
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+
+    implementation 'com.android.billingclient:billing:4.0.0'
+
+    def lottieVersion = '3.6.0'
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    // Admob & Facebook bidding
+    implementation 'com.google.android.gms:play-services-ads:20.4.0'
+    implementation 'com.google.ads.mediation:facebook:6.7.0.0'
+
+    //loading
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'pl.bclogic:pulsator4droid:1.0.3'
+
+    //Custom Toast
+    implementation 'com.github.GrenderG:Toasty:1.5.0'
+
+
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'com.rodolfonavalon:ShapeRippleLibrary:1.0.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    implementation "androidx.multidex:multidex:2.0.1"
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="CustomRadioTheme" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:colorControlNormal">@color/textColor2</item>
+        <item name="android:colorControlActivated">@color/cp_0</item>
+        <item name="android:colorControlHighlight">@color/cp_4</item>
+    </style>
+
+    <style name="AppToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:elevation">@dimen/_4sdp</item>
+
+    </style>
+</resources>

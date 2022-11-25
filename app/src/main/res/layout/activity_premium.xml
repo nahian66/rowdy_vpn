@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <include
+        android:id="@+id/tool_bar_faq"
+        layout="@layout/app_toolbar"
+        android:visibility="visible"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:contentDescription="@string/todo"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/hat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:text="@string/max_cloud"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="25sp"
+                    android:layout_marginStart="@dimen/_6dp"
+                    android:textColor="@color/txt_gold"
+                    android:text="@string/premium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/right_marck" />
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_marginStart="30dp"
+                        android:textColor="@color/white"
+                        android:text="@string/ad_free"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="18dp"
+
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:contentDescription="@string/todo"
+                        android:layout_gravity="center"
+                        android:src="@drawable/right_marck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_marginStart="30dp"
+                        android:textColor="@color/white"
+                        android:text="@string/_24_7_support"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="18dp"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:contentDescription="@string/todo"
+                        android:layout_gravity="center"
+                        android:src="@drawable/right_marck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_marginStart="30dp"
+                        android:textColor="@color/white"
+                        android:text="@string/no_speed_limit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="18dp"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:contentDescription="@string/todo"
+                        android:layout_gravity="center"
+                        android:src="@drawable/right_marck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_marginStart="30dp"
+                        android:textColor="@color/white"
+                        android:text="@string/premium_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:textColor="@color/txt_gold"
+                    android:text="@string/only"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_marginStart="@dimen/_6dp"
+                    android:textColor="@color/white"
+                    android:text="@string/_2_59_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/purchase_btn"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_36dp"
+                    android:background="@drawable/one_month"
+                    android:layout_width="315dp"
+                    android:layout_height="60dp">
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="@string/get_premium_now"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/_36dp"
+                    android:gravity="center"
+                    android:id="@+id/watch_reward"
+                    android:layout_width="315dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/main_btn_bg2"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/subcription_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:fontFamily="@font/avalon_font"
+                        android:text="@string/go_premium"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        tools:ignore="TooDeepLayout" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:fontFamily="@font/avalon_font"
+                        android:text="@string/go_pro_to_unlock_all_features"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
