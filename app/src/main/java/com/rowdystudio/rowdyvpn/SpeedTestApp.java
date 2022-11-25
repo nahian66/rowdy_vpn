@@ -20,7 +20,7 @@ public class SpeedTestApp extends Application {
 	/**
 	 * The constant MAX_LOG_TAG_LENGTH.
 	 */
-	public static final int MAX_LOG_TAG_LENGTH = 50;
+	public static final int MAX_LOG_TAG_LENGTH = 10;
 	/**
 	 * The constant LOGGING_ENABLED.
 	 */

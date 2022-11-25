@@ -5,7 +5,7 @@ android {
     buildToolsVersion '30.0.3'
     defaultConfig {
         applicationId 'com.chriswall.vpnfree'
-        minSdkVersion 17
+        minSdkVersion 19
         targetSdkVersion 33
         versionCode 1
         versionName "1.0"
@@ -63,7 +63,7 @@ dependencies {
     implementation "com.airbnb.android:lottie:$lottieVersion"
 
     // Admob & Facebook bidding
-    implementation 'com.google.android.gms:play-services-ads:20.4.0'
+    implementation 'com.google.android.gms:play-services-ads:21.3.0'
     implementation 'com.google.ads.mediation:facebook:6.7.0.0'
 
     //loading

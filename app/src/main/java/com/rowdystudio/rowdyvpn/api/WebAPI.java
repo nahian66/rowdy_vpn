@@ -2,7 +2,7 @@ package com.rowdystudio.rowdyvpn.api;
 
 public class WebAPI {
 
-    public static final String ADMIN_PANEL_API = "https://freevpn365.com/admin/";
+    public static final String ADMIN_PANEL_API = "https://rowdyvpn.crisisstudio.com/admin-testing";
 
     public static String FREE_SERVERS = "";
     public static String PREMIUM_SERVERS = "";
