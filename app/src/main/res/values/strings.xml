@@ -7,7 +7,7 @@
     <string name="developer_email">testdemo@gmail.com</string>
     <string name="app_version">1.0v</string>
 
-    <!--Put Your Price-->
+    <!--Put Your Pricing-->
     <string name="vip_price_month">$2.59</string>
     <string name="vip_price_3month">$3.99</string>
     <string name="vip_price_6month">$6.49</string>
